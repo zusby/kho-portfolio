@@ -1,7 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Building2, Calendar } from "lucide-react";
 import {useEffect, useRef, useState} from "react";
-import * as React from "react";
 
 const experiences = [
 
@@ -36,29 +35,37 @@ export default function ExperiencesSection() {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        // Scroll to the last item to center it
         const container = containerRef.current;
         if (container) {
-            const childWidth = 240 + 32; // width + gap
-            const scrollLeft = childWidth * (experiences.length - 1) - container.offsetWidth / 2 + childWidth / 2;
+            const childWidth = 240 + 32;
+            const visibleCount = Math.floor(container.offsetWidth / childWidth);
+            const hiddenCount = Math.max(0, activeIndex - (visibleCount - 1));
+            const scrollLeft = hiddenCount * childWidth;
             container.scrollTo({ left: scrollLeft, behavior: "smooth" });
         }
-    }, []);
+    }, [activeIndex]);
+
+    const handleSetActiveIndex = (index: number) => {
+        setActiveIndex(index);
+    };
 
     return (
         <div className="w-full overflow-x-auto py-12 md:py-20 px-6 bg-gray-900 text-white">
             <div ref={containerRef} className="flex items-start gap-8 relative min-w-[800px]">
-                {/* Horizontal line */}
                 <div className="absolute top-5 left-0 right-0 h-1 bg-white/30 z-0" />
 
                 {experiences.map((exp, index) => (
-                    <div key={index} className="relative z-10 text-center flex-shrink-0 w-60">
-                        {/* Timeline node */}
+                    <div
+                        key={index}
+                        className={`relative z-10 text-center flex-shrink-0 w-60 ${
+                            index <= activeIndex - 2 ? "hidden md:block" : ""
+                        }`}
+                    >
                         <button
                             className={`mx-auto mb-3 w-6 h-6 rounded-full border-2 border-white bg-gray-800 transition-all ${
                                 activeIndex === index ? "bg-white" : ""
                             }`}
-                            onClick={() => setActiveIndex(index === activeIndex ? null : index)}
+                            onClick={() => handleSetActiveIndex(index)}
                         />
                         <div className="text-sm font-semibold mb-2 text-gray-300">{exp.period}</div>
 

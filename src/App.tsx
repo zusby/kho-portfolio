@@ -20,7 +20,7 @@ import SkillsSection, {type Skill} from "@/components/Sections/Skills.tsx";
 import AboutSection from "@/components/Sections/About.tsx";
 import {ImProfile} from "react-icons/im";
 import type {Project} from "@/lib/Project.tsx";
-import Experiences from "@/components/Sections/Experiences.tsx";
+import ExperiencesSection from "@/components/Sections/Experiences.tsx";
 
 
 const projects:Project[] = [
@@ -157,7 +157,7 @@ export function Portfolio() {
             </section>
 
             <AboutSection ref={aboutRef}/>
-            {/*<Experiences />*/}
+            <ExperiencesSection />
             <SkillsSection skills={skills}/>
 
             <section
