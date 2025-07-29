@@ -6,7 +6,7 @@ The site is deployed via **GitHub Pages**, making it easy to share with recruite
 
 ## 🚀 Features
 
-- ⚛️ **React** – Component-based structure for scalability and maintainability  
+- ⚛️ **React** – Component-based structure
 - 🎨 **Tailwind CSS** – Utility-first CSS framework for fast, responsive design  
 - 🧩 **shadcn/ui** – Beautiful, accessible UI components built on top of Radix UI  
 - 🌐 **GitHub Pages** – Deployed directly from the `main` branch  
