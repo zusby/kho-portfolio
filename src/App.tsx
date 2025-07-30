@@ -154,7 +154,7 @@ export function Portfolio() {
 
 
 
-            </section>
+            </section>*
 
             <AboutSection ref={aboutRef}/>
             <ExperiencesSection />
