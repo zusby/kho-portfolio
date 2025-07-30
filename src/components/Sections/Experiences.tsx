@@ -17,7 +17,7 @@ const experiences = [
         company: "University of Camerino",
         period: "Apr 2025",
         description:
-            "Study of microservices architecture and implementation of Hexagonal architecture in the project SiLaw",
+            "Thesis title: Study of microservices architecture and implementation of Hexagonal architecture in the project SiLaw",
         technologies: [],
     },
     {

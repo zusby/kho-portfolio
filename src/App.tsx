@@ -145,7 +145,7 @@ export function Portfolio() {
                         <a href="https://www.linkedin.com/in/kacper-henryk-osicki-b6194619a/">
                             <SiLinkedin/>
                         </a>
-                        <a href="https://www.linkedin.com/in/kacper-henryk-osicki-b6194619a/">
+                        <a href="https://drive.google.com/file/d/1ka_QFkm9BV3KkEqN5aKlAJVb7ReTELGz/view?usp=sharing">
                            <ImProfile/>
                         </a>
                     </div>
