@@ -70,7 +70,7 @@ const ProjectsSection: React.FC<SkillsSectionProps> = ({
         <>
             <section
                 ref={projectsRef}
-                className="bg-gray-950 py-20 px-4 md:px-32 text-center w-3/4"
+                className="bg-gray-950 py-20 px-4 md:px-32 text-center "
             >
                 <h2 className="text-3xl md:text-5xl font-bold mb-12">Academic Projects</h2>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
