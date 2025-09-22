@@ -87,7 +87,7 @@ export default function ExperiencesSection() {
                 <div className="relative flex items-start gap-8 w-max mx-auto z-10">
                     {/* Timeline line container */}
                     <motion.div
-                        className="absolute top-[20px] left-0 h-1 flex"
+                        className="absolute top-[12px] left-0 h-1 flex"
                         style={{ width: experiences.length * (ITEM_WIDTH + GAP), transformOrigin: "left" }}
                         initial={{ scaleX: 0 }}
 

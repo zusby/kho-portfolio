@@ -20,6 +20,7 @@ import AboutSection from "@/components/Sections/About.tsx";
 import {ImProfile} from "react-icons/im";
 import ExperiencesSection from "@/components/Sections/Experiences.tsx";
 import ProjectsSection from "@/components/Sections/ProjectsSection.tsx";
+import PersonalProjectsSection from "@/components/Sections/PersonalProjectsSection.tsx";
 
 
 
@@ -45,6 +46,7 @@ const skills:Skill[] = [
 export function Portfolio() {
     const aboutRef = useRef<HTMLDivElement | null>(null);
     const projectsRef = useRef<HTMLDivElement | null>(null);
+    const personalProjectsRef = useRef<HTMLDivElement | null>(null);
 
     const scrollTo = (ref: React.RefObject<HTMLDivElement | null>) => {
         ref.current?.scrollIntoView({behavior: "smooth"});
@@ -114,6 +116,7 @@ export function Portfolio() {
                 <ExperiencesSection />
             </div>
             <ProjectsSection  projectsRef={projectsRef} />
+            <PersonalProjectsSection  projectsRef={personalProjectsRef} />
 
 
 
