@@ -20,7 +20,7 @@ const projects: Project[] = [
     {
         title: "ThinkQ *WIP*",
         description: "A full stack application that takes a pdf or context and generates multiple choice using a local LLM",
-        link: "https://github.com/zusby/kho-portfolio",
+        link: "https://github.com/zusby/thinkq",
         icons: [<SiSpringboot/>,<SiPostgresql/>, <SiHibernate/>,<FaJava/>]
     }
 ];
